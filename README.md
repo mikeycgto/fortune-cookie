@@ -9,6 +9,19 @@ To get a cookie do something like the following:
 
     curl -I https://http-fortune-cookie.herokuapp.com
 
+### In the Browser (with CORS)
+
+You can get a fortune by making an XHR request from the browser. This
+is only possible in browsers that support CORS.
+
+For example:
+
+    var xhr = new XMLHttpRequest;
+    
+    xhr.open('GET', 'http://http-fortune-cookie.herokuapp.com', true);
+    xhr.send();
+
+    alert(xhr.response);
 
 ### Credits
 
