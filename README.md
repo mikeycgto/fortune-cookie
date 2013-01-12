@@ -17,7 +17,7 @@ For example:
 
     var xhr = new XMLHttpRequest;
     
-    xhr.open('GET', 'http://http-fortune-cookie.herokuapp.com', true);
+    xhr.open('GET', 'https://http-fortune-cookie.herokuapp.com', true);
     xhr.send();
 
     xhr.onreadystatechange = function(){
