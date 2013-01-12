@@ -7,7 +7,7 @@ end
 
 helpers do
   def fortunes
-    @fortunes ||= File.read(settings.fortune_file).split('%').map(&:strip!)
+    @fortunes ||= File.read(settings.fortune_file).split('%').map!(&:strip!)
   end
 
   def random_fortune
