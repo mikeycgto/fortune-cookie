@@ -20,7 +20,10 @@ For example:
     xhr.open('GET', 'http://http-fortune-cookie.herokuapp.com', true);
     xhr.send();
 
-    alert(xhr.response);
+    xhr.onreadystatechange = function(){
+      if (xhr.readyState == 4) alert(xhr.response);
+    };
+
 
 ### Credits
 
