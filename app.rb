@@ -20,7 +20,7 @@ helpers do
 end
 
 get '/' do
-  response['Set-Cookie'] = escape random_fortune
+  response['Set-Cookie'] = escape(random_fortune)
 
   status 204
 end
