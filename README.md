@@ -15,14 +15,14 @@ is only possible in browsers that support CORS.
 
 For example:
 
-    var xhr = new XMLHttpRequest;
-    
-    xhr.open('GET', 'https://http-fortune-cookie.herokuapp.com', true);
-    xhr.send();
+    !function(xhr){
+        xhr.open('GET', 'https://http-fortune-cookie.herokuapp.com', true);
+        xhr.send();
 
-    xhr.onreadystatechange = function(){
-      if (xhr.readyState == 4) alert(xhr.response);
-    };
+        xhr.onreadystatechange = function(){
+            if (xhr.readyState == 4) alert(xhr.response);
+        };
+    }(new XMLHttpRequest);
 
 
 ### Credits
